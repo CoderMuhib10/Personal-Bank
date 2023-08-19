@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank</title>
+    <link rel="shortcut icon" href="R (1).png" type="image/x-icon">
+
+
+
+</head>
+
+<body class="bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <h1 class="text-center text-white mt-4 mb-10 font-semibold text-5xl font-serif">
+        Let's Get Some
+        <span class="text-yellow-400 font-bold">Mooooneeyyy!!!</span>
+        <main>
+            <section class="mt-12">
+                <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                    <div class=" bg-white bg-opacity-30 backdrop-blur-xl drop-shadow-lg rounded-lg p-8">
+                        <h4 class="text-2xl">Deposit</h4>
+                        <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                    </div>
+
+                    <div class="bg-white bg-opacity-30 backdrop-blur-xl drop-shadow-lg rounded-lg p-8 ">
+                        <h4 class="text-2xl">Deposit</h4>
+                        <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                    </div>
+
+                    <div class="bg-white bg-opacity-30 backdrop-blur-xl p-8 drop-shadow-lg rounded-lg">
+                        <h4 class="text-2xl">Balance</h4>
+                        <h2 class="text-5xl">$<span id="deposit-total">1240</span></h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-12">
+                <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 p-8 rounded-xl">
+                        <h4 class="text-2xl mb-4  text-white">Deposit Here</h4>
+                        <input id="deposit-field" class="text-black mx-auto text-xl  w-9/12 block mb-2 px-3" type="text"
+                            name="" placeholder="$ Amount you want to deposit">
+                        <button onclick="play()" id="btn-deposit"
+                            class="bg-gradient-to-r from-fuchsia-500 to-blue-500 px-8 py-2 font-normal text-lg rounded-lg">Deposit</button>
+                    </div>
+                    <div class="bg-gradient-to-r from-fuchsia-500 to-blue-500 p-8 rounded-xl">
+                        <h4 class="text-2xl mb-4  text-white">Withdraw Here</h4>
+                        <input id="withdraw-field" class="text-black mx-auto text-xl block w-9/12 px-3 mb-2" type="text"
+                            placeholder="$ Amount you want to withdraw">
+
+                        <button onclick="play()" id="btn-withdraw"
+                            class="px-8 py-2 font-normal text-lg  bg-gradient-to-r from-cyan-500 to-blue-500 p-8 rounded-lg">Withdraw</button>
+                    </div>
+                </div>
+                <audio id="audio" src="click.mp3"></audio>
+            </section>
+
+        </main>
+        <!-- script sources -->
+        <script src="deposit.js"></script>
+        <script src="withdraw.js"></script>
+
+</body>
+
+</html>
